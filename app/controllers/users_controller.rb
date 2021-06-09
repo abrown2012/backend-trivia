@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  # POST /users
+  # POST /users #ADD UNIQUENESS TO THE NAME--> VALIDATE! ALSO INCLUDE FIND OR CREATE 
   def create
     @user = User.new(user_params)
 
